@@ -20,7 +20,7 @@ F=1/P; % frecventa
 w0=2*pi/P; % pulsatia
 t=0:0.02:P-0.02; % timpul pe care calculam integrala (o perioada); 
                  % rezolutia temporala trebuie sa fie de 2 ori mai mica decat perioada semnalului (teorema esantionarii);
-%% semnalul dreptungiular
+% semnalul dreptungiular
 x = zeros(1,size(t,2)); % initializarea lui x cu zerouri
 x(t<=D/2) =1; % de la 0 la D/2 x are valoarea 1
 x(t>P-D/2) =1; % de la D/2 la P x are valoarea 1
